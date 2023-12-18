@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "VITE_API_URL=http://localhost:3000 vite",
+    "build": "VITE_API_URL=xxx vite build",
+    "build:local": "VITE_API_URL=http://localhist:3000 vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },

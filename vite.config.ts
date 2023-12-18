@@ -5,7 +5,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 export default defineConfig({
   build: {
     lib: {
-      entry: "src/main.ts",
+      entry: "src/sdk.ts",
       name: "dislyze SDK",
       fileName: "dislyze-sdk"
     }
