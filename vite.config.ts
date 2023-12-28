@@ -6,8 +6,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/sdk.ts",
-      name: "dislyze SDK",
-      fileName: "dislyze-sdk"
+      name: "dislyze",
+      fileName: "dislyze-sdk",
+      formats: ["umd"],
     }
   },
   plugins: [

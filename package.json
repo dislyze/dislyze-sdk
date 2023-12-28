@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./src/sdk.ts",
+  "types": "./src/types.d.ts",
   "scripts": {
-    "dev": "VITE_API_URL=http://localhost:3000 vite",
-    "build": "VITE_API_URL=xxx vite build",
-    "build:local": "VITE_API_URL=http://localhist:3000 vite build",
+    "dev": "vite",
+    "build": "vite build",
+    "build:local": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },

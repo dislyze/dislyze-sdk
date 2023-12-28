@@ -10,20 +10,38 @@
     let submittedSuccessfully = false
     
     const toggleWidget = () => {
-        console.log("asd", isWidgetOpen)
         isWidgetOpen = !isWidgetOpen
     }
 
     const getIconPositionStyle = () => {
-        return "right: 16px; bottom: 16px;"
+        switch (window.dislyze.widgetPosition) {
+            case "topLeft":
+                return "left: 16px; top: 16px;"
+            case "topRight":
+                return "right: 16px; top: 16px;"
+            case "bottomLeft":
+                return "left: 16px; bottom: 16px;"
+            default:
+                return "right: 16px; bottom: 16px;"
+        }
     }
 
     const getBoxPositionStyle = () => {
-        return "right: 16px; bottom: 72px;"
+        switch (window.dislyze.widgetPosition) {
+            case "topLeft":
+                return "left: 16px; top: 72px;"
+            case "topRight":
+                return "right: 16px; top: 72px;"
+            case "bottomLeft":
+                return "left: 16px; bottom: 72px;"
+            default:
+                return "right: 16px; bottom: 72px;"
+        }
     }
 
     const submitFeedback = async () => {
-        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/sdk/feedback`, {
+        const url = window.dislyze.devModeUrl ?? "https://app.dislyze.com"
+        const res = await fetch(`${url}/api/sdk/feedback`, {
             method: "post",
             body: JSON.stringify({
                 apiKey: window.dislyze.apiKey,
@@ -98,9 +116,10 @@
 }
 
 .dislyze-widget-circle {
-    position: absolute;
+    position: fixed;
     width: 48px;
     height: 48px;
+    z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,10 +134,12 @@
 }
 
 .dislyze-feedback-box {
+    z-index: 9999;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
+    background-color: #fff;
     box-shadow: 0 0px 15px 3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
     border-radius: 8px;
     width: 284px;
