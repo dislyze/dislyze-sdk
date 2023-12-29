@@ -3,7 +3,7 @@
 <script lang="ts">
     import { fade } from "svelte/transition";
 
-    let isWidgetOpen = true;
+    let isWidgetOpen = false;
     let title = ""
     let content = ""
     let errorMessage = ""
