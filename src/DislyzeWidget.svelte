@@ -201,7 +201,7 @@
 }
 
 .dislyze-feedback-field:focus {
-    border: 1px solid #94a3b8;
+    border: 1.5px solid #94a3b8;
 }
 
 .dislyze-feedback-field::placeholder {
