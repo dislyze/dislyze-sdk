@@ -3,6 +3,6 @@
     import { initDislyze } from "./sdk"
 
     initDislyze({
-        apiKey: "v5Apn48nezpYUezU5veuUYnep8zvvPvz4Czp"
-    })
+        apiKey: "2AupCY28e288CezvnUeuALPenUYPC2AvAuvA"
+    }, "http://localhost:3000")
 </script>
