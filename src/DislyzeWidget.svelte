@@ -130,7 +130,7 @@
                     <div id="dislyze-error-message">{errorMessage}</div>
                 {/if}
             </div>
-            <div id="dislyze-widget-by-message"><span>Widget by</span> <a id="dislyze-widget-by-link" href="https://dislyze.com" target="_blank">dislyze</a></div>
+            <div id="dislyze-widget-by-message"><span>Widget by</span> <a id="dislyze-widget-by-link" href="https://dislyze.com?utm_source=sdk&utm_medium=widget&utm_campaign=powered_by" target="_blank">dislyze</a></div>
         </div>
     {/if}
 </div>
