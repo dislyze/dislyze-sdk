@@ -1,7 +1,7 @@
 {
   "name": "dislyze-sdk",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "./src/sdk.ts",
   "types": "./src/types.d.ts",
@@ -13,7 +13,6 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
-    "@tsconfig/svelte": "^5.0.2",
     "svelte": "^4.2.3",
     "svelte-check": "^3.6.0",
     "tslib": "^2.6.2",
