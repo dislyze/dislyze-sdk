@@ -7,8 +7,7 @@
   "types": "./src/types.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:local": "vite build",
+    "build": "vite build && mv dist/dislyze-sdk.umd.cjs dist/dislyze-sdk.js",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
