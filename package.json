@@ -1,7 +1,7 @@
 {
   "name": "dislyze-sdk",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "main": "./src/sdk.ts",
   "types": "./src/types.d.ts",
@@ -19,5 +19,11 @@
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dislyze/dislyze-sdk"
+  },
+  "homepage": "https://github.com/dislyze/dislyze-sdk"
 }
