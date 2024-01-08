@@ -12,31 +12,29 @@ There are 2 ways to install the SDK: Via npm or cdn.
 npm install dislyze-sdk
 ```
 
-Note: For the following step, replace `"YOUR API KEY"` with the api key displayed at https://app.dislyze.com/settings/api-key.
-
 Then, add the following code to the root of your app:
 
 ```
 import "dislyze-sdk/dist/dislyze-sdk";
 import { initDislyze } from "dislyze-sdk";
 
-initDislyze({ apiKey: "YOUR API KEY" });
+initDislyze({ apiKey: "YOUR API KEY" }); // replace `"YOUR API KEY"` with the api key displayed at https://app.dislyze.com/settings/api-key
 ```
 
 ### Install via cdn
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/dislyze-sdk@0.0.3/dist/dislyze-sdk.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dislyze-sdk@latest/dist/dislyze-sdk.js"></script>
 ```
 
 Then, add the following code to the root of your app:
 
 ```
-<script>dislyze.initDislyze({ apiKey: "YOUR API KEY" });</script>
+<script>dislyze.initDislyze({ apiKey: "YOUR API KEY" });</script> // replace `"YOUR API KEY"` with the api key displayed at https://app.dislyze.com/settings/api-key
 ```
 
 This will show a widget on the bottom right of your app.
 
-To test if your installation is working, visit https://app.dislyze.com/settings/api-key and reference step 2.
+To test if your installation is working, visit https://app.dislyze.com/settings/api-key#confirm and follow the instructions.
 
-To learn how to customize or hide the widget, visit https://app.dislyze.com/settings/api-key and reference step 3.
+To learn how to customize or hide the widget, visit https://app.dislyze.com/settings/api-key#customize.
